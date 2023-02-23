@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<manifest identifier="SingleCourseManifest" version="1.2"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd                     http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd                              http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+	<metadata/>
+	<organizations default="contabil">
+	   <organization identifier="contabil">
+	   <title>Gestão de Mídias Sociais</title>
+			<item identifier="MOD_1" isvisible="true">
+				<title>Módulo II - Briefing</title>
+				<item identifier="MOD_1_SCO_1" identifierref="RES_1" isvisible="true">
+					<title>Módulo II - Briefing</title>
+				</item>
+			<item identifier="MOD_1_SCO_2" identifierref="RES_2" isvisible="true">
+					<title>Apresentação</title>
+					<adlcp:prerequisites type="aicc_script">MOD_1_SCO_1</adlcp:prerequisites>
+				</item>
+			</item>
+		
+			<item identifier="MOD_2" isvisible="true">
+				<title>Briefing</title>
+				<item identifier="MOD_2_SCO_1" identifierref="RES_3" isvisible="true">
+					<title>Definição e Objetivos</title>
+					<adlcp:prerequisites type="aicc_script">MOD_2_SCO_1</adlcp:prerequisites>
+				</item>
+				<item identifier="MOD_2_SCO_2" identifierref="RES_4" isvisible="true">
+					<title>Caso de Ensino</title>
+					<adlcp:prerequisites type="aicc_script">MOD_3_SCO_1</adlcp:prerequisites>
+				</item>
+			
+				</item>
+				
+			  <metadata>
+			  <schema>ADL SCORM</schema>
+			  <schemaversion>1.2</schemaversion>
+			  <location>indefinido.xml</location>
+			</metadata>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="INC" adlcp:scormtype="asset" type="webcontent">
+			<file href="src/includes/apiwrapper.js"/>
+			<file href="src/includes/scofunctions.js"/>
+			<file href="src/includes/conteudo.js"/>
+		</resource>
+		<resource identifier="RES_1" type="webcontent" adlcp:scormtype="sco" href="src/index.html">
+		   <file href="src/index.html"/>
+		   <dependency identifierref="INC"/>
+		</resource>
+		<resource identifier="RES_2" type="webcontent" adlcp:scormtype="sco" href="src/apresentacao.html">
+		   <file href="src/apresentacao.html"/>
+		   <dependency identifierref="INC"/>
+		</resource>
+		<resource identifier="RES_3" type="webcontent" adlcp:scormtype="sco" href="src/pagina3.html">
+		   <file href="src/pagina3.html"/>
+		   <dependency identifierref="INC"/>
+		</resource>
+		<resource identifier="RES_4" type="webcontent" adlcp:scormtype="sco" href="src/pagina4.html">
+		   <file href="src/pagina4.html"/>
+		   <dependency identifierref="INC"/>
+		</resource>
+	</resources>
+</manifest>
