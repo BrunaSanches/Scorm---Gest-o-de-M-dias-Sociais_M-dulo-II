@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#home{
+    background-color: rgb(199, 235, 235);
+    display: grid;
+    grid-template-areas:
+        "b . .  a"
+        "b . .  a"
+        "b . .  a";
+   
+}
+
+
+p{
+    font-size: 70px;
+    position: relative;
+    font-family: 'Open Sans';
+    color: rgb(0, 0, 0);
+    padding-left: 6em;
+    padding-top: 1em;
+    text-align: justify;
+}
+
+.footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content:space-between;
+    align-items:flex-end;
+    
+}
+#botao1{
+    height: 250px;
+    width: 300px;
+    align-items: left;
+    justify-content: left;
+    padding-left:5em;
+    padding-bottom: 3em;
+}
+#botao2{
+    height: 250px;
+    width: 300px;
+    align-items: right;
+    justify-content: right;
+    padding-right:5em;
+    padding-bottom: 3em;
+}
+#barra{
+    height: 160px;
+    width: 85%;
+    padding-bottom:1em;
+    
+}
