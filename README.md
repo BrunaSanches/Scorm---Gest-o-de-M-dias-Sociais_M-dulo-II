@@ -1,2 +1,2 @@
-# Scorm---Gest-o-de-M-dias-Sociais_M-dulo-II
+# Scorm-GestaodeMidiasSociais-ModuloII
 Este é um projeto do inicio de aprendizado do padrão scorm (utilizado para cursos online). 
