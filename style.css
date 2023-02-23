@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+*{
+      padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagens/pag1/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas:
+        "c . b  a"
+        "c . b  ."
+        "c . b  .";
+   
+
+}
+
+#logo{
+    grid-area: a;
+    display: flex;
+    align-items: right;
+    justify-content: end;
+  
+}
+
+#logo img{
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+}
+
+#texto-central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: b;
+}
+
+#forma{
+    width: 70%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: .8;
+    position: absolute;
+}
+
+#titulo{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+#titulo h1{
+    color: white;
+    font-size: 120px;
+    font-weight: 800;
+}
+
+#titulo h2{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+
+}
+#titulo h3{
+    color: black;
+    font-size: 60px;
+    font-weight: 600;
+}
+#titulo-apresentacao{
+    padding: 0.5em;
+    font-size: 80px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+p #apresentacao{
+    text-align: justify;
+    font-size: 50px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size: 40px;
+    font-family: 'Open Sans';
+    position: relative; 
+    padding: 1em;
+    text-align: center;
+    
+    color: black;
+}
+
+#img-apresenta{
+    text-decoration: none;
+	border: none;
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+
+}
+
+.footer{
+    background-color: rgb(7, 168, 168);
+    grid-area: a;
+    display: flex;
+    align-items: right;
+    justify-content: end;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+
+    
+}
+#botao{
+    padding: 1em;
+    height: 250px;
+    width: 250x;
+}
