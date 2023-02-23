@@ -75,53 +75,56 @@
 }
 #titulo-apresentacao{
     padding: 0.5em;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     position: relative;
     text-align: center;
     color: black;
+    font-weight: bold;
 }
-p #apresentacao{
-    text-align: justify;
-    font-size: 50px;
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
-}
-
 p{
-    font-size: 40px;
-    font-family: 'Open Sans';
-    position: relative; 
-    padding: 1em;
     text-align: center;
-    
+    font-size: 70px;
+    position: relative;
+    font-family: 'Open Sans';
+    padding: 1em;
     color: black;
 }
 
 #img-apresenta{
-    text-decoration: none;
-	border: none;
-    object-fit: cover;
     width: 100%;
-    height: 70vh;
-
+    height: 100vh;
+    object-fit: cover;
 }
 
 .footer{
-    background-color: rgb(7, 168, 168);
-    grid-area: a;
     display: flex;
-    align-items: right;
-    justify-content: end;
     bottom: 0;
     position: fixed;
     width: 100%;
-
+    justify-content:space-between;
+    align-items:flex-end;
     
 }
-#botao{
-    padding: 1em;
-    height: 250px;
-    width: 250x;
+#botao1{
+    width: 80%;
+    width: 100%;
+    align-items: left;
+    justify-content: left;
+    padding-left:5em;
+    padding-bottom: 3em;
+}
+#botao2{
+    width: 80%;
+    width: 100%;
+    align-items: right;
+    justify-content: right;
+    padding-right:5em;
+    padding-bottom: 3em;
+}
+
+
+@media (max-widh: 1166px) {
+    
 }

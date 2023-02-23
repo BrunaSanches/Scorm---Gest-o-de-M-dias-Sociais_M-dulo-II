@@ -6,27 +6,26 @@
 
 }
 #home{
-    
+    background-color: rgb(199, 235, 235);
     display: grid;
     grid-template-areas:
         "b . .  a"
-        "b . .  ."
-        "b . .  .";
+        "b . .  a"
+        "b . .  a";
    
 }
 #texto-esquerda img{
-    width: 70%;
+    width:70%;
     height: 100vh;
     object-fit: cover;
     opacity: .8;
     position: absolute;
     justify-content: left;
     align-items: left;
-    height: 100vh;
 }
 
 #texto-esquerda{
-    width: 70%;
+    width:100%;
     height: 100vh;
     display: flex;
     grid-area: b;
@@ -34,62 +33,74 @@
     align-items: center;
 }
 
+#texto-direita{
+    display: flex;
+    grid-area: a;
+    align-items: center;
+    justify-content: center;
+    padding: 6em;
+
+}
+#texto-direita img{
+    width:100%;
+    height: 70vh;
+    object-fit: cover;
+    position: relative;
+    
+    
+}
+
+
 p{
-    font-size: 50px;
+    font-size: 70px;
     position: relative;
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
     padding-left: 6em;
     padding-top: 1em;
     text-align: justify;
-    
 }
 
  h1{
+    font-size: 120px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
     text-align: left;
     color: rgb(255, 255, 255);
-    font-size: 120px;
     font-weight: 700;
     padding-left: 3em;
-    
-   
-    
+
+
 }
-#foto{
-    width:800px;
-    height: 100vh;
-    object-fit: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right:60em;
-}
-#foto img{
-  
-    height: 70vh;
-}
-
-
-
-
-
 
 .footer{
-    background-color:  rgb(7, 168, 168);
     display: flex;
-    align-items: right;
-    justify-content: end;
     bottom: 0;
     position: fixed;
     width: 100%;
+    justify-content:space-between;
+    align-items:flex-end;
     
 }
-#botao{
-    padding: 1em;
+#botao1{
     height: 250px;
-    width: 250x;
-
+    width: 300px;
+    align-items: left;
+    justify-content: left;
+    padding-left:5em;
+    padding-bottom: 3em;
+}
+#botao2{
+    height: 250px;
+    width: 300px;
+    align-items: right;
+    justify-content: right;
+    padding-right:5em;
+    padding-bottom: 3em;
+}
+#barra{
+    height: 160px;
+    width: 85%;
+    padding-bottom:1em;
+    
 }
