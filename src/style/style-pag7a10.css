@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
 *{
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
 
 }
@@ -19,47 +18,101 @@
     grid-area: a;
     align-items: center;
     justify-content: center;
-    padding: 3em;
+    padding-right: 2em;
+ 
 
 }
 #imagem-direita img{
     width:100%;
-    height: 50vh;
+    height: 70vh;
     object-fit: cover;
     position: relative;
+    float: left;
+    margin: 0 10px 10px 0;
 }
-#texto-central img{
+#forma{
     width: 90%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
+    object-fit: cover;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
+    padding: auto;
+   
+
 }
 
 #texto-central{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     grid-area: b;
     position: relative;
     flex-direction: column;
+    padding-left: 6em;
+
 }
 
 #titulo{
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     position: relative;
-    text-align: center;
+    text-align: left;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    padding: 1em;
 }
 
 #texto-central p{
-    color: rgb(3, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: 600;
     position: relative;
-    text-align: center;
+    
 }
 #imgMais{
     width: 20px;
+    position: relative;
+}
+.footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content:space-between;
+    align-items:flex-end;
+    
+}
+.footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content:space-between;
+    align-items:flex-end;
+    
+}
+#botao1{
+
+    width: 200px;
+    align-items: left;
+    justify-content: left;
+    padding-left:5em;
+    padding-bottom: 3em;
+}
+#botao2{
+    width:  200px;
+    align-items: right;
+    justify-content: right;
+    padding-right:5em;
+    padding-bottom: 3em;
+}
+
+#botao1:hover{
+    scale: 1.1;
+    transition: .3s;
+}
+#botao2:hover{
+    scale: 1.1;
+    transition: .3s;
 }
