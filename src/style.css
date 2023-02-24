@@ -112,6 +112,12 @@
         font-size: 40px;
     
     }
+    #titulo-apresentacao{
+        font-size: 60px;
+    }
+    #texto p{
+        font-size: 30px;
+    }
 }
 
 
@@ -130,6 +136,11 @@
     .botoes{
         width: 350px;
     }
+    #img-apresenta{
+        scale: 1;
+        height: 40vh;
+  
+}
 }
 
 
@@ -144,14 +155,10 @@
 
 
 
-#titulo h3{
-    color: black;
-    font-size: 60px;
-    font-weight: 600;
-}
 #titulo-apresentacao{
-    padding: 0.5em;
-    font-size: 100px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    font-size: 60px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     position: relative;
@@ -159,22 +166,29 @@
     color: black;
     font-weight: bold;
 }
-p{
-    text-align: center;
-    font-size: 70px;
+#texto p{
+    text-align: justify;
+    font-size: 30px;
     position: relative;
     font-family: 'Open Sans';
     padding: 1em;
     color: black;
+    align-items: center;
 }
 
-#img-apresenta{
+
+#texto{
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
+
 }
+#imagem-tela{
+   background-image: url(imagens/pag2/img-apresenta.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+    height: 100vh;
+    width: 100%;
 
-
+}
 
 
   
