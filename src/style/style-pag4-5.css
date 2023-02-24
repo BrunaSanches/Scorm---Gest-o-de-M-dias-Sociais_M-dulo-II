@@ -42,7 +42,7 @@
 
 }
 #texto-direita img{
-    width:100%;
+    width:90%;
     height: 70vh;
     object-fit: cover;
     position: relative;
@@ -51,23 +51,23 @@
 }
 
 p{
-    font-size: 70px;
+    font-size: 30px;
     position: relative;
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
-    padding-left: 6em;
+    padding-left: 3em;
     padding-top: 1em;
     text-align: justify;
 }
 
  h1{
-    font-size: 120px;
+    font-size: 50px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
     text-align: left;
     color: rgb(255, 255, 255);
     font-weight: 700;
-    padding-left: 3em;
+    padding-left: 2em;
 
 
 }
@@ -82,24 +82,31 @@ p{
     
 }
 #botao1{
-    height: 250px;
-    width: 300px;
+
+    width: 150px;
     align-items: left;
     justify-content: left;
     padding-left:5em;
     padding-bottom: 3em;
 }
 #botao2{
-    height: 250px;
-    width: 300px;
+    width:  150px;
     align-items: right;
     justify-content: right;
     padding-right:5em;
     padding-bottom: 3em;
 }
 #barra{
-    height: 160px;
-    width: 85%;
-    padding-bottom:1em;
+    height: 100px;
+    width: 80%;
+    padding:1em;
     
+}
+#botao1:hover{
+    scale: 1.1;
+    transition: .3s;
+}
+#botao2:hover{
+    scale: 1.1;
+    transition: .3s;
 }

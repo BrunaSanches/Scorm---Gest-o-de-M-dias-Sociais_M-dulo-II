@@ -44,7 +44,6 @@ h2{
     
 
 }
-
 p{
     font-size: 60px;
     position: relative;
@@ -80,4 +79,12 @@ p{
     justify-content: right;
     padding-right:5em;
     padding-bottom: 3em;
+}
+#botao1:hover{
+    scale: 1.1;
+    transition: .3s;
+}
+#botao2:hover{
+    scale: 1.1;
+    transition: .3s;
 }

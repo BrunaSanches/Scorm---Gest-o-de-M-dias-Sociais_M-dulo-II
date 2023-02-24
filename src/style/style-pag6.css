@@ -6,7 +6,7 @@
 
 }
 #home{
-    background-color: #0096BB;
+    background-color:#0096BB;
     display: grid;
     grid-template-areas:
         "b . .  a"
@@ -15,22 +15,12 @@
    
 }
 #texto-esquerda img{
-    width:80%;
+    width:70%;
     height: 100vh;
     object-fit: cover;
     position: absolute;
     justify-content: left;
     align-items: left;
-}
-h1{
-    font-size: 120px;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    display: flex;
-    color: rgb(0, 0, 0);
-    padding-left: 3em;
-    padding-bottom: 0.5em;
-
 }
 
 #texto-esquerda{
@@ -38,10 +28,8 @@ h1{
     height: 100vh;
     display: flex;
     grid-area: b;
+    justify-content: left;
     align-items: center;
-    padding: 6em;
-    
-   
 }
 
 #texto-direita{
@@ -61,18 +49,29 @@ h1{
     
 }
 
+
 p{
-    font-size: 70px;
+    font-size: 20px;
     position: relative;
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
-    padding-left: 6em;
-    padding-top: 1em;
+    padding-left: 4em;
     text-align: justify;
-     
 }
 
  
+h1{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    padding-left: 3em;
+    padding-bottom: 1em;
+
+}
+
 .footer{
     display: flex;
     bottom: 0;
@@ -83,25 +82,31 @@ p{
     
 }
 #botao1{
-    height: 250px;
-    width: 300px;
+
+    width: 150px;
     align-items: left;
     justify-content: left;
-    padding-left:7em;
+    padding-left:5em;
     padding-bottom: 3em;
-    
 }
 #botao2{
-    width: 60%;
-    width: 100%;
+    width:  250px;
     align-items: right;
     justify-content: right;
     padding-right:5em;
     padding-bottom: 3em;
 }
 #barra{
-    height: 160px;
+    height: 100px;
     width: 80%;
-    padding-bottom:1em;
+    padding:1em;
     
+}
+#botao1:hover{
+    scale: 1.1;
+    transition: .3s;
+}
+#botao2:hover{
+    scale: 1.1;
+    transition: .3s;
 }
