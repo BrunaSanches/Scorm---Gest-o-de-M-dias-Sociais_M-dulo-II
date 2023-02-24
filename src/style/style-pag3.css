@@ -29,7 +29,7 @@
    
 }
 h2{
-    font-size: 100px;
+    font-size: 40px;
     font-family: 'Open Sans';
     color: black;
     text-align: left;
@@ -40,12 +40,12 @@ h2{
     width: 50%;
     height: 70vh;
     grid-area: a;
-   padding-top:20em;
+ 
     
 
 }
 p{
-    font-size: 60px;
+    font-size: 20px;
     position: relative;
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
@@ -64,27 +64,24 @@ p{
     align-items:flex-end;
     
 }
-#botao1{
-    width: 80%;
+
+
+.footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
     width: 100%;
-    align-items: left;
-    justify-content: left;
-    padding-left:5em;
-    padding-bottom: 3em;
+    justify-content:space-between;
+    align-items:flex-end;
+    
 }
-#botao2{
-    width: 80%;
-    width: 100%;
-    align-items: right;
-    justify-content: right;
-    padding-right:5em;
-    padding-bottom: 3em;
+.botoes{
+    width: 200px;
+    height: auto;
+    padding: 30px;
 }
-#botao1:hover{
-    scale: 1.1;
-    transition: .3s;
-}
-#botao2:hover{
+
+.botoes:hover{
     scale: 1.1;
     transition: .3s;
 }
