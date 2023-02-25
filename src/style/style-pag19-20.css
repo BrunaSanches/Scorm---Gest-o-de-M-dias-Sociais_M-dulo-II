@@ -17,28 +17,25 @@ p{
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
     text-align: justify;
-    padding: 3em;
+    padding: 2em;
 }
 
  
 h1{
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: rgb(255, 255, 255);
+    text-align: left;
+    color: rgb(0, 0, 0);
     font-weight: 700;
-    padding-bottom: 3em;
+    padding-left: 2em;
     
 
 }
 #texto-esquerda{
-    background-color: #0096BB;
     width:100%;
     height: 100vh;
     display:flex;
 	flex-direction:column;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -48,22 +45,24 @@ h1{
     display:flex;
 	flex-direction:column;
     justify-content: center;
-    align-items: center;
+  
 
 }
 #texto-esquerda img{
-    width:500px;
-    height: 400px;
+    width:100%;
+    height: 100vh;
+}
     
 
-}
-#texto-direita img{
-    width:600px;
-    height: 400px;
+.footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content:space-between;
+    align-items:flex-end;
     
 }
-
-
 
 
 .footer{
