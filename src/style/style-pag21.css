@@ -78,7 +78,7 @@ h1{
     font-size: 40px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #393A3F;
     font-weight: 700;
     padding: 1em;
 
@@ -104,24 +104,32 @@ h1{
     align-items:flex-end;
     
 }
+#botao1{
 
-
-.footer{
-    display: flex;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    justify-content:space-between;
-    align-items:flex-end;
+    width: 150px;
+    align-items: left;
+    justify-content: left;
+    padding-left:5em;
+    padding-bottom: 3em;
+}
+#botao2{
+    width:  150px;
+    align-items: right;
+    justify-content: right;
+    padding-right:5em;
+    padding-bottom: 3em;
+}
+#barra{
+    height: 100px;
+    width: 80%;
+    padding:1em;
     
 }
-.botoes{
-    width: 200px;
-    height: auto;
-    padding: 30px;
+#botao1:hover{
+    scale: 1.1;
+    transition: .3s;
 }
-
-.botoes:hover{
+#botao2:hover{
     scale: 1.1;
     transition: .3s;
 }
