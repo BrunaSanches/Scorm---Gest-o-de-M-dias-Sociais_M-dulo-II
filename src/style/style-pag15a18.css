@@ -6,60 +6,71 @@
 
 }
 #home{
+    
     display: grid;
     grid-template-areas:
         "b . .  a"
         "b . .  a"
-        "b . .  a";
-}
-
-#texto-esquerda{
-    width:60%;
-    height: 100vh;
-    display: flex;
-    grid-area: b;
-    justify-content: left;
-    align-items: center;
-    position: absolute;
-}
-#texto-direita{
-    display: flex;
-    grid-area: a;
-    align-items:right;
-    justify-content:center;
-    
-
-}
-#texto-direita img{
-    width: 100%;
-    height:90vh;
-    object-fit: cover;
-    max-width: 400px;
-    padding-top: 2em;
-    
+        "b . .  a"
 }
 p{
     font-size: 25px;
     position: relative;
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
-    padding-left: 3em;
-    padding-top: 0.5em;
+    padding-left: 4em;
     text-align: justify;
 }
 
- h1{
+ 
+h1{
     font-size: 40px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
     text-align: left;
-    color: #393A3F;
+    color: rgb(255, 255, 255);
     font-weight: 700;
-    padding-left: 2em;
-    padding-bottom: 0.5em;
-
+    padding-left: 3em;
+    padding-bottom: 1em;
 
 }
+#texto-esquerda{
+    background-color: #0096BB;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    grid-area: b;
+    justify-content: left;
+    align-items: center;
+}
+#texto-direita{
+    display: flex;
+    grid-area: a;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 5em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer{
     display: flex;

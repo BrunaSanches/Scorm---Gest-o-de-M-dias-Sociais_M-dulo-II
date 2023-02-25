@@ -34,7 +34,6 @@
     height: 70vh;
     object-fit: cover;
     position: relative;
-
    
 }
 p{
@@ -69,32 +68,13 @@ p{
     align-items:flex-end;
     
 }
-#botao1{
+.botoes{
+    width: 200px;
+    height: auto;
+    padding: 30px;
+}
 
-    width: 150px;
-    align-items: left;
-    justify-content: left;
-    padding-left:5em;
-    padding-bottom: 3em;
-}
-#botao2{
-    width:  150px;
-    align-items: right;
-    justify-content: right;
-    padding-right:5em;
-    padding-bottom: 3em;
-}
-#barra{
-    height: 100px;
-    width: 80%;
-    padding:1em;
-    
-}
-#botao1:hover{
-    scale: 1.1;
-    transition: .3s;
-}
-#botao2:hover{
+.botoes:hover{
     scale: 1.1;
     transition: .3s;
 }
