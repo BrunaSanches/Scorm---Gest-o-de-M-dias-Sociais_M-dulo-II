@@ -97,3 +97,132 @@ h2{
     scale: 1.1;
     transition: .3s;
 }
+
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 480px) {
+
+    #titulo h1{
+        font-size: 60px;
+    }
+    
+    #texto p{
+        text-align: justify;  
+        font-size: 600px;
+
+    }
+    #home{
+        flex-direction: column;
+    }
+    #texto-esquerda{
+        width:100%;
+        height: 50vh;
+    
+    }
+    
+    #texto-direita{
+        width:100%;
+        height: 50vh;
+    
+    
+    }
+    #texto-esquerda img{
+        width:100%;
+        height: 50vh;
+    }
+        
+
+}
+@media (min-width:768px) and (max-width: 992px) {
+   
+    #home{
+        flex-direction: column;
+    }
+    #texto-esquerda{
+        width:100%;
+        height: 50vh;
+    
+    }
+    
+    #texto-direita{
+        width:100%;
+        height: 50vh;
+    
+    
+    }
+    #texto-esquerda img{
+        width:100%;
+        height: 50vh;
+    }
+    .botoes{
+        width: 350px;
+    }
+
+}
+
+
+ @media  (min-width: 992px) {
+    #home{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    p{
+        font-size: 25px;
+        font-family: 'Open Sans';
+        color: rgb(0, 0, 0);
+        text-align: justify;
+        padding-left: 3em;
+        padding: 1em;
+        
+    }
+    ul{
+        padding-left: 3em;
+    
+    }
+    li{
+        font-size: 25px;
+        font-family: 'Open Sans';
+        color: rgb(0, 0, 0);
+        text-align: justify;
+        padding: 1em;
+    }
+     
+    h2{
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        padding-left: 3em;
+        padding: 1em;
+        
+    
+    }
+    #texto-esquerda{
+        width:100%;
+        height: 100vh;
+        display:flex;
+        flex-direction:column;
+    
+    }
+    
+    #texto-direita{
+        width:100%;
+        height: 100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+      
+    
+    }
+    #texto-esquerda img{
+        width:100%;
+        height: 100vh;
+    }
+        
+    
+}
