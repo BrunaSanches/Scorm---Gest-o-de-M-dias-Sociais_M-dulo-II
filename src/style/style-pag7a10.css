@@ -1,5 +1,5 @@
-
-#home{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+#caixa{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -8,8 +8,8 @@
 }
 
 #container{
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,60 +21,17 @@
 }
 #texto p{
     margin-left: 20px;
-}
-.footer{
-    display: flex;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    justify-content:space-between;
-    align-items:flex-end;
-    
-}
-.botoes{
-    width: 200px;
-    height: auto;
-    padding: 30px;
-}
-
-.botoes:hover{
-    scale: 1.1;
-    transition: .3s;
-}
-
-p{
-    font-size: 25px;
-    font-family: 'Open Sans';
-    color: black;
-    text-align:justify;
-    
-}
-
- 
-h1{
-    font-size: 50px;
     font-family: 'Open Sans', sans-serif;
-    text-align: left;
-    color: whitesmoke;
-    font-weight: 700;
-    padding-bottom: em;
-    font-weight: bold;
-    
-
-}
-.titulo-label{
-    font-size: 40px;
     color: white;
-    font-style: italic;
+    font-size: 16px;
+}
+
+#titulo{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
     font-weight: bold;
 }
-
-.img-label{
-    padding-top:2em ;
-}
-
-
-
 #clica-1{
     width: 80vh;
     height: auto;
@@ -89,7 +46,12 @@ h1{
 
 .hidden{
     display: none;
-
+}
+.hidden p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    
 }
 
 .check{
@@ -119,8 +81,8 @@ label img{
  @media (min-width:768px) and (max-width: 992px) {
    
     #container{
-        width: 70%;
-        height: 70vh;
+        width: 80%;
+        height: 80vh;
         flex-direction: column; 
         justify-content: space-between;
         align-items: center;
@@ -141,12 +103,15 @@ label img{
         margin-left: 600px;
         
     }
+    .botoes{
+        width: 250px;
+    }
 }
 
 @media screen and (max-width: 480px){
     #container{
         width: 80%;
-        height: 100vh;
+        height: auto;
         flex-direction: column; 
         justify-content: space-between;
         align-items: center;
@@ -159,7 +124,7 @@ label img{
     }
 
     label img{
-        width: 10px;
+        width: 20px;
         height: auto;
     }
     .hidden{
@@ -175,4 +140,32 @@ label img{
     .hidden p{
         font-size: 10px;
     }
+    .botoes{
+        width: 250px;
+    }
 }
+
+
+
+/* footer */
+
+.footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content:space-between;
+    align-items:flex-end;
+    
+}
+.botoes{
+    width: 100px;
+    height: auto;
+    padding: 30px;
+}
+
+.botoes:hover{
+    scale: 1.1;
+    transition: .3s;
+}
+
