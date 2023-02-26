@@ -5,57 +5,24 @@
 
 }
 #home{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;   
-    position: relative;
-}
-
-
-#imagem-direita{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 1000px;
-    height: 1000px;
-    background-color: red;
-    
  
 
 }
-#imagem-direita img{
-    width: 250px;
+
+
+#celular{
+    width:300px;
     height: auto;
     position: absolute;
+    padding-right: 4em;
     
-}
-#forma{
-    width: 90%;
-    height: 100vh;
-    position: absolute;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    padding: auto;
-   
-
-}
-
-#texto-central{
-    width: 70%;
-    height: 70vh;
-    background-color: #0096BB;;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    grid-area: b;
-    position: relative;
-    flex-direction: column;
-    padding-left: 6em;
-
+    
 }
 
 #titulo{
@@ -68,17 +35,71 @@
     padding: 1em;
 }
 
-#texto-central p{
+.texto-clique{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-align: left;
+    font-size: 20px;
     color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-weight: 600;
+}
+.texto-resposta{
+
+    font-family: 'Open Sans', sans-serif;
     position: relative;
+    text-align: justify;
+    font-size: 15px;
+    color: rgb(5, 0, 0);
+}
+#container{
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #0096BB;
     
+
 }
-#imgMais{
-    width: 20px;
-    position: relative;
+
+
+/* CLIQUE */
+
+
+#texto{
+    display: flex;
 }
+#texto p{
+    margin-left: 20px;
+}
+
+.hidden{
+    display: none;
+
+}
+
+.check{
+    display: none;
+}
+
+#ckb:checked ~ #texto-1{
+    display: block;
+}
+#ckb2:checked ~ #texto-2{
+    display: block;
+}
+#ckb3:checked ~ #texto-3{
+    display: block;
+}
+
+label img{
+    width: 40px;
+    height: auto;
+}
+
+ 
+
+
+/* FOOTER */
 .footer{
     display: flex;
     bottom: 0;
@@ -88,33 +109,13 @@
     align-items:flex-end;
     
 }
-
-#botao1{
-
+.botoes{
     width: 200px;
-    align-items: left;
-    justify-content: left;
-    padding-left:5em;
-    padding-bottom: 3em;
-}
-#botao2{
-    width:  200px;
-    align-items: right;
-    justify-content: right;
-    padding-right:5em;
-    padding-bottom: 3em;
+    height: auto;
+    padding: 30px;
 }
 
-#botao1:hover{
+.botoes:hover{
     scale: 1.1;
     transition: .3s;
-}
-#botao2:hover{
-    scale: 1.1;
-    transition: .3s;
-}
-
-
-.esconder{
-    display: none;
 }
