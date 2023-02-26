@@ -7,13 +7,56 @@
 #home{
     width: 100%;
     height: 100vh;
-    background-color: white;
+    display: flex;
+
+}
+
+#esquerda{
+    width: 50%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
- 
+    align-items: center; 
 
+}
+
+label{
+    padding-top: 2em; 
+    padding-left: 2em;
+    padding-right: 2em;
+   
+}
+#img-label{
+width: 60px;
+
+}
+
+
+#direita{
+    width: 50%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(199, 235, 235);
+
+}
+#direita img{
+    border-radius: 3em;
+    width: 500px;
+    height: 500px;
+
+
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    color: #393A3F;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    text-align: center;
 }
 
 .texto-clique{
@@ -32,59 +75,9 @@
     text-align: justify;
     font-size: 25px;
     color: rgb(5, 0, 0);
+    padding-left: 2em;
+    padding-right: 2em;
 }
-label{
-    padding-top: 2em;
-   
-}
-#img-label{
-width: 60px;
-
-}
-
-#container{
-    width: 50%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    padding-left: 4em;
-    align-items: center;
-
-    
-
-}
-#direita{
-    width: 50%;
-    height:70vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-
-}
-#direita img{
-    border-radius: 3em;
-    width: 500px;
-    height: 500px;
-
-
-}
-#titulo-acima{
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-#titulo-acima h1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    color: #393A3F;
-    font-weight: bold;
-}
-
-
 
 /* CLIQUE */
 
@@ -144,12 +137,7 @@ label img{
     padding-right:5em;
     padding-bottom: 3em;
 }
-#barra{
-    height: 100px;
-    width: 80%;
-    padding:1em;
-    
-}
+
 #botao1:hover{
     scale: 1.1;
     transition: .3s;
@@ -157,4 +145,48 @@ label img{
 #botao2:hover{
     scale: 1.1;
     transition: .3s;
+}
+
+/* RESPONSIVIDADE */
+
+
+@media (min-width:480px) and (max-width: 992px) {
+   
+    #home{
+        flex-direction: column;
+    }
+    #esquerda{
+        width:100%;
+        height: 50vh;
+    
+    }
+    
+    #direita{
+        width:100%;
+        height: 50vh;
+    
+    }
+    p{
+        font-size: 40px;
+    }
+    
+}
+@media (min-width: 992px) {
+
+    #esquerda{
+        width:50%;
+        height: 100vh;
+    
+    }
+    
+    #direita{
+        width:50%;
+        height: 100vh;
+    
+    }
+    #direita img{
+        width:50%;
+        height: 50vh;
+    }
+    
 }
