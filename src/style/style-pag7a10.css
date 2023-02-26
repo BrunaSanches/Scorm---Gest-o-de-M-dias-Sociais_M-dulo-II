@@ -1,76 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
-*{
 
-    box-sizing: border-box;
-
-}
 #home{
     width: 100%;
     height: 100vh;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
- 
-
 }
 
-
-#celular{
-    width:300px;
-    height: auto;
-    position: absolute;
-    padding-right: 4em;
-    
-    
-}
-
-#titulo{
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    text-align: left;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    padding: 1em;
-}
-
-.texto-clique{
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    text-align: left;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-}
-.texto-resposta{
-
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    text-align: justify;
-    font-size: 15px;
-    color: rgb(5, 0, 0);
-}
 #container{
-    width: 80%;
-    height: 95%;
+    width: 70%;
+    height: 70%;
     display: flex;
-    flex-direction: column;
-    padding: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     background-color: #0096BB;
-    
-
 }
-
-
-/* CLIQUE */
-
-
 #texto{
     display: flex;
 }
 #texto p{
     margin-left: 20px;
 }
+.footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content:space-between;
+    align-items:flex-end;
+    
+}
+.botoes{
+    width: 200px;
+    height: auto;
+    padding: 30px;
+}
+
+.botoes:hover{
+    scale: 1.1;
+    transition: .3s;
+}
+
+p{
+    font-size: 25px;
+    font-family: 'Open Sans';
+    color: black;
+    text-align:justify;
+    
+}
+
+ 
+h1{
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    color: whitesmoke;
+    font-weight: 700;
+    padding-bottom: em;
+    font-weight: bold;
+    
+
+}
+.titulo-label{
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.img-label{
+    padding-top:2em ;
+}
+
+
+
+#clica-1{
+    width: 80vh;
+    height: auto;
+    padding: 10px;
+}
+
+#celular{
+    width: 250px;
+    height: auto;
+}
+
 
 .hidden{
     display: none;
@@ -95,30 +110,69 @@ label img{
     width: 40px;
     height: auto;
 }
-label{
-    padding-top: 1em;
-}
-
- 
 
 
-/* FOOTER */
-.footer{
-    display: flex;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    justify-content:space-between;
-    align-items:flex-end;
+
+
+/* RESPONSIVO */
+
+ @media (min-width:768px) and (max-width: 992px) {
+   
+    #container{
+        width: 70%;
+        height: 70vh;
+        flex-direction: column; 
+        justify-content: space-between;
+        align-items: center;
+    } 
     
-}
-.botoes{
-    width: 200px;
-    height: auto;
-    padding: 30px;
+    #clica-1{
+        width: 90%;
+        height: auto;
+    }
+    .hidden{
+        padding: 10px;
+    }
+    #celular{
+        width: 150px;
+        height: auto;
+        position:fixed;
+        margin-top: 600px;
+        margin-left: 600px;
+        
+    }
 }
 
-.botoes:hover{
-    scale: 1.1;
-    transition: .3s;
+@media screen and (max-width: 480px){
+    #container{
+        width: 80%;
+        height: 100vh;
+        flex-direction: column; 
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    } 
+    
+    #clica-1{
+        width: 90%;
+        height: auto;
+    }
+
+    label img{
+        width: 10px;
+        height: auto;
+    }
+    .hidden{
+        padding: 10px;
+    }
+    #celular{
+        width: 80px;
+        height: auto;
+        position: relative;
+        margin-left: 270px;
+
+    }
+    .hidden p{
+        font-size: 10px;
+    }
 }

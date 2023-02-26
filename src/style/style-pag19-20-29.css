@@ -55,15 +55,7 @@ h1{
 }
     
 
-.footer{
-    display: flex;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    justify-content:space-between;
-    align-items:flex-end;
-    
-}
+
 
 
 .footer{
