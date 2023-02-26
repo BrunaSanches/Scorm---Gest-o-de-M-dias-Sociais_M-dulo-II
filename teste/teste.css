@@ -10,6 +10,8 @@
 }
 
 #container{
+    width: 70%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -23,13 +25,23 @@
 }
 
 
-#texto-1{
+
+.hidden{
+    display: none;
+
+}
+
+.check{
     display: none;
 }
-#ckb{
-    display: none;
-}
+
 #ckb:checked ~ #texto-1{
+    display: block;
+}
+#ckb2:checked ~ #texto-2{
+    display: block;
+}
+#ckb3:checked ~ #texto-3{
     display: block;
 }
 
@@ -37,3 +49,5 @@ label img{
     width: 40px;
     height: auto;
 }
+
+
