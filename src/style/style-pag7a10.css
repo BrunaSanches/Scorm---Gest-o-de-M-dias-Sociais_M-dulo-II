@@ -95,6 +95,9 @@ label img{
     width: 40px;
     height: auto;
 }
+label{
+    padding-top: 1em;
+}
 
  
 

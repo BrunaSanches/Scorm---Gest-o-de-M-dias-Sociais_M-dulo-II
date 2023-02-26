@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+*{
+
+    box-sizing: border-box;
+
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+
+}
+
+.texto-clique{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-align: left;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+
+}
+.texto-resposta{
+
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-align: justify;
+    font-size: 25px;
+    color: rgb(5, 0, 0);
+}
+label{
+    padding-top: 2em;
+   
+}
+#img-label{
+width: 60px;
+
+}
+
+#container{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4em;
+    align-items: center;
+
+    
+
+}
+#direita{
+    width: 50%;
+    height:70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+#direita img{
+    border-radius: 3em;
+    width: 500px;
+    height: 500px;
+
+
+}
+#titulo-acima{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#titulo-acima h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    color: #393A3F;
+    font-weight: bold;
+}
+
+
+
+/* CLIQUE */
+
+
+#texto{
+    display: flex;
+}
+#texto p{
+    margin-left: 20px;
+}
+
+.hidden{
+    display: none;
+
+}
+
+.check{
+    display: none;
+}
+
+#ckb:checked ~ #texto-1{
+    display: block;
+}
+
+label img{
+    width: 40px;
+    height: auto;
+}
+
+ 
+
+
+/* FOOTER */
+
+
+.footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content:space-between;
+    align-items:flex-end;
+    
+}
+#botao1{
+
+    width: 150px;
+    align-items: left;
+    justify-content: left;
+    padding-left:5em;
+    padding-bottom: 3em;
+}
+#botao2{
+    width:  150px;
+    align-items: right;
+    justify-content: right;
+    padding-right:5em;
+    padding-bottom: 3em;
+}
+#barra{
+    height: 100px;
+    width: 80%;
+    padding:1em;
+    
+}
+#botao1:hover{
+    scale: 1.1;
+    transition: .3s;
+}
+#botao2:hover{
+    scale: 1.1;
+    transition: .3s;
+}
