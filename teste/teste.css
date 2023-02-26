@@ -1,0 +1,39 @@
+
+#caixa{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: red;
+}
+#texto{
+    display: flex;
+}
+#texto p{
+    margin-left: 20px;
+}
+
+
+#texto-1{
+    display: none;
+}
+#ckb{
+    display: none;
+}
+#ckb:checked ~ #texto-1{
+    display: block;
+}
+
+label img{
+    width: 40px;
+    height: auto;
+}
