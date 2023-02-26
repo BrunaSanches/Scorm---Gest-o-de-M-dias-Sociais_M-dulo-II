@@ -6,44 +6,36 @@
 
 }
 #home{
-    background-color: rgb(199, 235, 235);
-    display: grid;
-    grid-template-areas:
-        "b . .  a"
-        "b . .  a"
-        "b . .  a";
+  
+    display: flex;
    
-}
-#texto-esquerda img{
-    width:70%;
-    height: 100vh;
-    object-fit: cover;
-    opacity: .8;
-    position: absolute;
-    justify-content: left;
-    align-items: left;
 }
 
 #texto-esquerda{
-    width:100%;
+    width:50%;
     height: 100vh;
     display: flex;
-    grid-area: b;
     justify-content: left;
     align-items: center;
+    background-color:#0096BB;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 #texto-direita{
     display: flex;
-    grid-area: a;
+    width:50%;
+    height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 6em;
+    background-color: rgb(199, 235, 235);
+    
+
 
 }
 #texto-direita img{
-    width:90%;
-    height: 70vh;
+    width:500px;
+    height: 500px;
     object-fit: cover;
     position: relative;
     
@@ -51,24 +43,22 @@
 }
 
 p{
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     font-family: 'Open Sans';
-    color: rgb(0, 0, 0);
-    padding-left: 3em;
+    color:  white;
     padding-top: 1em;
     text-align: justify;
 }
-
- h1{
+h1{
     font-size: 50px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: 700;
-    padding-left: 2em;
-
+    padding-left: 1em;
+    padding-bottom: 0.5em;
 
 }
 
@@ -109,4 +99,93 @@ p{
 #botao2:hover{
     scale: 1.1;
     transition: .3s;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 480px) {
+
+    #titulo h1{
+        font-size: 60px;
+    }
+    
+    #texto p{
+        text-align: justify;  
+        font-size: 600px;
+
+    }
+    #home{
+        flex-direction: column;
+    }
+    #texto-esquerda{
+        width:100%;
+        height: 50vh;
+    
+    }
+    
+    #texto-direita{
+        width:100%;
+        height: 50vh;
+    
+    
+    }
+    #texto-esquerda img{
+        width:100%;
+        height: 50vh;
+    }
+        
+
+}
+@media (min-width:768px) and (max-width: 992px) {
+   
+    #home{
+        flex-direction: column;
+    }
+    #texto-esquerda{
+        width:100%;
+        height: 50vh;
+    
+    }
+    
+    #texto-direita{
+        width:100%;
+        height: 50vh;
+    
+    
+    }
+    p{
+        font-size: 30px;
+    }
+    
+
+}
+
+
+ @media  (min-width: 992px) {
+    #home{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    p{
+        font-size: 25px;
+       
+    }
+   
+    #texto-esquerda{
+        width:100%;
+        height: 100vh;
+    
+    }
+    
+    #texto-direita{
+        width:100%;
+        height: 100vh;
+    
+    }
+
+    
 }
