@@ -107,6 +107,9 @@ h1{
     .botoes{
         width: 250px;
     }
+    p{
+        font-size: 30px;
+    }
 
 }
 @media (min-width:480px) and (max-width: 992px) {
@@ -131,6 +134,9 @@ h1{
     }
     .botoes{
         width: 250px;
+    }
+    p{
+        font-size: 30px;
     }
 
 

@@ -108,7 +108,7 @@ p{
         height: 50vh;
     }
     p{
-        font-size: 25px;
+        font-size: 30px;
     }    
 
     #texto-direita img{
@@ -153,6 +153,9 @@ p{
     .botoes{
         width: 250px;
     }
+    p{
+        font-size: 30px;
+    }
 
 }
 
@@ -180,14 +183,14 @@ p{
 
 }
 #texto-esquerda img{
-    width:600px;
-    height: 500px;
+    width:500px;
+    height: 400px;
     
 
 }
 #texto-direita img{
-    width:600px;
-    height:500px;
+    width:500px;
+    height:400px;
     
 }
 

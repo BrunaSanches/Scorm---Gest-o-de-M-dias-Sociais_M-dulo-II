@@ -166,8 +166,11 @@ label img{
         height: 50vh;
     
     }
-    p{
-        font-size: 40px;
+    .texto-resposta{
+        font-size: 30px;
+    }
+   .texto-clique{
+    font-size: 40px;
     }
     
 }
