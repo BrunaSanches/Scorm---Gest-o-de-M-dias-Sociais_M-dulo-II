@@ -13,7 +13,7 @@
    
 }
 p{
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
     text-align: justify;
@@ -26,7 +26,7 @@ ul{
 
 }
 li{
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
     text-align: justify;
@@ -175,7 +175,7 @@ h2{
        
     }
     p{
-        font-size: 25px;
+        font-size: 20px;
        
     }
     ul{
@@ -183,11 +183,11 @@ h2{
     
     }
     li{
-        font-size: 25px;
+        font-size: 20px;
     }
      
     h2{
-        font-size: 30px;
+        font-size: 26px;
         
     }
     #texto-esquerda{

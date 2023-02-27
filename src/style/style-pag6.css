@@ -52,7 +52,7 @@
 }
 
 p{
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     font-family: 'Open Sans';
     color:  white;
@@ -168,7 +168,7 @@ h1{
     
     }
     p{
-        font-size: 30px;
+        font-size: 25px;
     }
 
 #texto-direita img{
@@ -188,7 +188,7 @@ h1{
        
     }
     p{
-        font-size: 25px;
+        font-size: 20px;
        
     }
    
@@ -206,6 +206,9 @@ h1{
     #texto-direita img{
         width:400px;
         height: 400px;
+    }
+    h1{
+        padding: 30px;
     }
     
 }
