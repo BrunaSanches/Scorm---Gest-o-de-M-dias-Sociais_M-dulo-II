@@ -66,8 +66,20 @@ main{
     padding: 15px;
 }
 #barra{
+    height: 100px;
     width: 80%;
-    border: solid 1px #0096BB;
+    padding-top:2.5em;
+    
+}
+.botoes{
+    width: 150px;
+    height: auto;
+    padding: 30px;
+}
+
+.botoes:hover{
+    scale: 1.1;
+    transition: .3s;
 }
 
 /* RESPONSIVIDADE TELAS PEQUENAS */
