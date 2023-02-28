@@ -68,7 +68,7 @@ h1{
     
 }
 .botoes{
-    width: 200px;
+    width: 150px;
     height: auto;
     padding: 30px;
 }
@@ -105,7 +105,7 @@ h1{
         font-size: 50px;
     }
     .botoes{
-        width: 250px;
+        width: 150px;
     }
 
 }
@@ -130,7 +130,7 @@ h1{
         padding-top: 1em;
     }
     .botoes{
-        width: 250px;
+        width: 150px;
     }
     p{
         font-size: 30px;
@@ -168,6 +168,6 @@ h1{
         font-size: 20px;
     }
     .botoes{
-        width: 250px;
+        width: 150px;
     }
 }

@@ -65,19 +65,32 @@ main{
     align-items:center;
     padding: 15px;
 }
+#botao1{
+
+    width: 120px;
+    align-items: left;
+    justify-content: left;
+    padding-left:4em;
+    padding-bottom: 1em;
+}
+#botao2{
+    width:  120px;
+    align-items: right;
+    justify-content: right;
+    padding-right:4em;
+    padding-bottom: 1em;
+}
 #barra{
     height: 100px;
     width: 80%;
-    padding-top:2.5em;
+    padding-top:2em;
     
 }
-.botoes{
-    width: 150px;
-    height: auto;
-    padding: 30px;
+#botao1:hover{
+    scale: 1.1;
+    transition: .3s;
 }
-
-.botoes:hover{
+#botao2:hover{
     scale: 1.1;
     transition: .3s;
 }

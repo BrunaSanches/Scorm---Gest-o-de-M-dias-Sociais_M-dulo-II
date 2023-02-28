@@ -59,7 +59,7 @@ h1{
     
 }
 .botoes{
-    width: 200px;
+    width: 150px;
     height: auto;
     padding: 30px;
 }
@@ -120,7 +120,7 @@ p{
         font-size: 50px;
     }
     .botoes{
-        width: 250px;
+        width: 150px;
     }
 
 }
@@ -151,7 +151,7 @@ p{
         padding-top: 1em;
     }
     .botoes{
-        width: 250px;
+        width: 150px;
     }
     p{
         font-size: 30px;

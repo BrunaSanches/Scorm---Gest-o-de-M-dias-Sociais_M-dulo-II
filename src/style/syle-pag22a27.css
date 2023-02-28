@@ -124,14 +124,14 @@ label img{
 }
 #botao1{
 
-    width: 150px;
+    width: 130px;
     align-items: left;
     justify-content: left;
     padding-left:5em;
     padding-bottom: 3em;
 }
 #botao2{
-    width:  150px;
+    width:  130px;
     align-items: right;
     justify-content: right;
     padding-right:5em;
