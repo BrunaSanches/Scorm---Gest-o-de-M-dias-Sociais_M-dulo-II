@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#titulo{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #393A3F;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+#container{
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.quadrado{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.elementos{
+    width: 50%;
+    height: 50%;
+    background-color: #0096BB;
+}
+.elementos p{
+    text-align: justify;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    padding: 15px;
+}
+.imgs{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.numero{
+    width: 25px;
+    height: 25px;
+}
+#controles{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content:space-between;
+    align-items:center;
+    padding: 15px;
+}
+#barra{
+    width: 80%;
+    border: solid 1px #0096BB;
+}
+
+/* RESPONSIVIDADE TELAS PEQUENAS */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #container{
+        width: 100%;
+        height: 65vh;
+    }
+    .quadrado{
+        width: 50%;
+        height: 65%;
+    }
+    .elementos p{
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+}
+/* RESPONSIVIDADE DISPOSITIVOS MOBILE */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #container{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        margin-top: 350px;
+    }
+    .quadrado{
+        width: 100%;
+        height: 100%;
+    }
+    #titulo{
+        font-size: 12px;
+        top: 0px;
+        position: absolute;
+
+    }
+    .elementos p{
+        font-size: 13px;
+    }
+    #controles{
+        position: relative;
+        bottom: 0;
+        margin-top: 50px;
+    }
+    .numero{
+        width: 15px;
+        height: 15px;
+    }
+}
+/* RESPONSIVIDADE TELA EM MODO PAISAGEM*/
+@media(orientation: landscape){
+    #titulo{
+        font-size: 12px;
+        top: 0px;
+        position: absolute;
+    }
+    #container{
+        width: 90%;
+        height: 80vh;
+    }
+    .quadrado{
+        width: 90%;
+        height: 80%;
+    }
+    .elementos p{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .numero{
+        width: 15px;
+        height: 15px;
+    }
+  }
