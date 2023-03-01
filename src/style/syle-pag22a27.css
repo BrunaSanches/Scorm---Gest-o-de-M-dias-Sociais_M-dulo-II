@@ -44,8 +44,8 @@ width: 60px;
 }
 #direita img{
     border-radius: 3em;
-    width: 500px;
-    height: 500px;
+    width: 60%;
+    height: 60vh;
 
 
 }
@@ -147,49 +147,74 @@ label img{
     transition: .3s;
 }
 
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE TELAS PEQUENAS */
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
-
-@media (min-width:480px) and (max-width: 992px) {
+    h1{
+        font-size: 20px;
+        
+    }
+    p{
+        font-size: 15px;
+        
+    }
+    
+    #botao1{
+        width: 150px;
+        height: auto;
+    }
+    #botao2{
+        width: 150px;
+        height: auto;
+    }
+    #esquerda img{
+        width: 60%;
+        height: 60%;
+    }
+    #esquerda{
+        width: 50%;
+        height: 100vh;
+    }
+    #direita{
+        width: 50%;
+        height: 100vh;
+    }
+    
    
+}
+
+/* RESPONSIVIDADE DISPOSITIVOS MOBILE */
+@media screen and (min-width: 280px) and (max-width: 480px) {
     #home{
         flex-direction: column;
     }
     #esquerda{
-        width:100%;
+        width: 100%;
         height: 50vh;
-    
     }
-    
     #direita{
-        width:100%;
-        height: 50vh;
-    
-    }
-    .texto-resposta{
-        font-size: 30px;
-    }
-   .texto-clique{
-    font-size: 40px;
-    }
-    
-}
-@media (min-width: 992px) {
-
-    #esquerda{
-        width:50%;
-        height: 100vh;
-    
-    }
-    
-    #direita{
-        width:50%;
-        height: 100vh;
-    
-    }
-    #direita img{
-        width:50%;
+        width: 100%;
         height: 50vh;
     }
-    
+     p{
+        font-size: 10px;
+        
+     }
+     h1{
+        font-size: 20px;
+     }
+     #botao1{
+        width: 100px;
+        height: auto;
+    }
+    #botao2{
+        width: 100px;
+        height: auto;
+    }
+   
+  
+    #esquerda img{
+        width: 70%;
+        height: 60%;
+    }
 }
