@@ -115,9 +115,19 @@ h1{
         
     }
     
-    .botoes{
+    #botao1{
         width: 150px;
         height: auto;
+    }
+    #botao2{
+        width: 150px;
+        height: auto;
+    }
+    #barra{
+        height: 100px;
+        width: 50%;
+        padding-top:2em;
+    
     }
     #texto-direita img{
         width: 80%;
@@ -147,9 +157,19 @@ h1{
         font-size: 16px;
         
      }
-    .botoes{
-        width: 150px;
+    #botao1{
+        width: 120px;
         height: auto;
+    }
+    #botao2{
+        width: 120px;
+        height: auto;
+    }
+    #barra{
+        height: 100px;
+        width: 50%;
+        padding-top:2em;
+    
     }
     #texto-direita img{
         width: 70%;
