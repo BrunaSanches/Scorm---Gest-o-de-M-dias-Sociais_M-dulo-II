@@ -5,7 +5,9 @@
     box-sizing: border-box;
 
 }
-
+#home{
+    display: flex;
+}
  
 h1{
     font-size: 50px;
@@ -19,7 +21,7 @@ h1{
 }
 
 #texto-esquerda{
-    width:100%;
+    width:50%;
     height: 100vh;
     display:flex;
 	flex-direction:column;
@@ -29,7 +31,8 @@ h1{
 }
 
 #texto-direita{
- 
+    width:50%;
+    height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +40,7 @@ h1{
 }
 #texto-direita img{
     width:70%;
-    height: 70vh;
+    height:50vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -60,14 +63,14 @@ h1{
     width: 130px;
     align-items: left;
     justify-content: left;
-    padding-left:5em;
+    padding-left:4em;
     padding-bottom: 3em;
 }
 #botao2{
     width:  130px;
     align-items: right;
     justify-content: right;
-    padding-right:5em;
+    padding-right:4em;
     padding-bottom: 3em;
 }
 #barra{
@@ -99,84 +102,71 @@ p{
 
 
 
+/* RESPONSIVIDADE TELAS PEQUENAS */
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
-/* RESPONSIVIDADE */
+    h1{
+        font-size: 20px;
+        
+    }
+    p{
+        font-size: 15px;
+        
+    }
+    
+    #botao1{
+        width: 150px;
+        height: auto;
+    }
+    #botao2{
+        width: 150px;
+        height: auto;
+    }
+    #texto-direita img{
+        width: 70%;
+        height: 40%;
+    }
+    
+   
+}
 
-@media (min-width: 480px) {
-
+/* RESPONSIVIDADE DISPOSITIVOS MOBILE */
+@media screen and (min-width: 280px) and (max-width: 480px) {
     #home{
         flex-direction: column;
     }
     #texto-esquerda{
-
-        width:100%;
-        height: 40vh;
-    }
-    
-    #texto-direita{
-        width:100%;
+        width: 100%;
         height: 50vh;
-    
+    }
+    #texto-direita{
+        width: 100%;
+        height: 50vh;
+    }
+     p{
+        font-size: 15px;
+        
+     }
+     h1{
+        font-size: 25px;
+     }
+     #botao1{
+        width: 100px;
+        height: auto;
+    }
+    #botao2{
+        width: 100px;
+        height: auto;
+    }
+    #barra{
+        height: 100px;
+        width: 50%;
+        padding-top:2em;
     
     }
+  
     #texto-direita img{
-       
-        width:90%;
-        height: 40vh;
-       
-    
+        width: 70%;
+        height: 60%;
     }
-    p{
-        font-size: 30px;
-
-    }    
-    
-    h1{
-        font-size: 50px;
-        padding-top: 0;
-    }
-    .botoes{
-        width: 250px;
-    }
-
-}
-@media (min-width:480px) and (max-width: 992px) {
-
-   
-
-}
-
-@media  (min-width: 992px) {
-
-#home{
-    display:flex;
-	flex-direction:row;
-    justify-content: center;
-    align-items: center;
-   
-}
-#texto-esquerda{
-    width:100%;
-    height: 100vh;
-
-}
-#texto-direita{
-    
-    width:70%;
-    height: 70vh;
-
-}
-#texto-direita img{
-    width:70%;
-    height: 50vh;
-}
-h1{
-    font-size: 50px;
-    padding-top: 0;
-}
-p{
-    font-size: 30px;
-
-}    
-
 }
