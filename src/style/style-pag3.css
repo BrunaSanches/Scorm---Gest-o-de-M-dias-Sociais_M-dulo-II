@@ -13,7 +13,7 @@
    
 }
 p{
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
     text-align: justify;
@@ -28,7 +28,7 @@ ul{
 
 }
 li{
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Open Sans';
     color: rgb(0, 0, 0);
     text-align: justify;
@@ -123,21 +123,21 @@ h2{
    
 }
 /* RESPONSIVIDADE DISPOSITIVOS MOBILE */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 280px) and (max-width: 480px) {
     #home{
         flex-direction: column;
     }
     h2{
-        font-size: 18px;
+        font-size: 17px;
         
     }
      p{
        
-        font-size: 14px;
+        font-size: 13px;
         
     }
     li{
-        font-size: 14px;
+        font-size: 13px;
         
     }
     .botoes{
