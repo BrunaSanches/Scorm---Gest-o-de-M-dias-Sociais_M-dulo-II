@@ -6,45 +6,41 @@
 
 }
 #home{
+  
     display: flex;
-}
-
- 
-h1{
-    font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
-    text-align: left;
-    padding-left: 2em;
-    color: rgb(44, 10, 10);
-    font-weight: 700;
-
-
+   
 }
 
 #texto-esquerda{
     width:50%;
     height: 100vh;
-    display:flex;
-	flex-direction:column;
-    justify-content: center;
+    display: flex;
+    justify-content: left;
     align-items: center;
-
+    background-color:#0096BB;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 #texto-direita{
+    display: flex;
     width:50%;
     height: 100vh;
-    display:flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: rgb(199, 235, 235);
+    
+
 
 }
+
 #pag12{
     width:60%;
     height: 70vh;
     display:flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2%;
 
 
 }
@@ -54,6 +50,7 @@ h1{
     display:flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2%;
 
 
 }
@@ -63,110 +60,58 @@ h1{
     display:flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2%;
 
 
-}
-
-
-.footer{
-    display: flex;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    justify-content:space-between;
-    align-items:flex-end;
-    
-}
-#botao1{
-
-    width: 130px;
-    align-items: left;
-    justify-content: left;
-    padding-left:5em;
-    padding-bottom: 3em;
-}
-#botao2{
-    width:  130px;
-    align-items: right;
-    justify-content: right;
-    padding-right:5em;
-    padding-bottom: 3em;
-}
-#barra{
-    height: 100px;
-    width: 80%;
-    padding:1em;
-    
-}
-#botao1:hover{
-    scale: 1.1;
-    transition: .3s;
-}
-#botao2:hover{
-    scale: 1.1;
-    transition: .3s;
 }
 
 
 p{
     font-size: 20px;
     font-family: 'Open Sans';
-    color: rgb(0, 0, 0);
+    color: blacks;
     text-align: justify;
-    padding-left: 3em;
-    padding-right: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-top: 1em;
+  
 }
+h1{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-align: left;
+    color: black;
+    font-weight: 700;
+    padding-left: 1em;
+    padding-right: 1em;
 
 
-
+}
 
 
 /* RESPONSIVIDADE TELAS PEQUENAS */
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
-    #home{
-        flex-direction: row;
-    }
     h1{
-        font-size: 20px;
+        font-size: 30px;
         
     }
     p{
-        font-size: 13px;
+        font-size: 15px;
         
     }
     
-    #botao1{
-        width: 150px;
-        height: auto;
-    }
-    #botao2{
-        width: 150px;
-        height: auto;
-    }
-    #pag12{
-        width:60%;
-        height: 70vh;
-    }
-    #pag12{
-        width:70%;
-        height: 60vh;
-    }
-    #pag13{
-        width:60%;
-        height: 40vh;
-    }
-    #pag14{
-        width:80%;
-        height: 50vh;
+
+    #texto-direita img{
+        width: 80%;
+        height: 80%;
     }
     
-   
 }
 
 /* RESPONSIVIDADE DISPOSITIVOS MOBILE */
-@media screen and (min-width: 280px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     #home{
         flex-direction: column;
     }
@@ -179,38 +124,18 @@ p{
         height: 50vh;
     }
     h1{
-        font-size: 20px;
+        font-size: 18px;
         
     }
-    p{
+     p{
         font-size: 13px;
         
-    }
-     #botao1{
-        width: 100px;
-        height: auto;
-    }
-    #botao2{
-        width: 100px;
-        height: auto;
-    }
-    #barra{
-        height: 100px;
-        width: 50%;
-        padding-top:2em;
+     }
+ 
     
+    #texto-direita img{
+        width: 70%;
+        height: 70%;
     }
-    #pag12{
-        width:60%;
-        height: 40vh;
-    }
-    #pag13{
-        width:60%;
-        height: 40vh;
-    }
-    #pag14{
-        width:60%;
-        height: 40vh;
-    }
-   
+    
 }
