@@ -46,7 +46,7 @@
     flex-direction: column;
 }
 h1{
-    font-size:16px;
+    font-size:18px;
     color: white;
     font-weight: bold;
     font-family: 'Berlin Sans FB Demi', sans-serif;
@@ -56,7 +56,7 @@ h1{
 
 }
 h2{
-    font-size: 14px;
+    font-size: 15px;
     color: white;
     font-weight: bold;
     font-family: 'Berlin Sans FB Demi', sans-serif;
@@ -105,9 +105,9 @@ a{
 
 @media screen and (max-width:768px) {
     h1{
-        font-size:14px;
+        font-size:15px;
     }
     h2, a{
-        font-size:12px;
+        font-size:13px;
     }
 }
