@@ -105,9 +105,9 @@ a{
 
 @media screen and (max-width:768px) {
     h1{
-        font-size:12px;
+        font-size:14px;
     }
     h2, a{
-        font-size:10px;
+        font-size:12px;
     }
 }
